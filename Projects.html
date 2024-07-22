@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+    background: #081b29;
+    color: #ededed;
+
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+.logo {
+    position: relative;
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+.logo::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay:0.4s;
+}
+.navbar a {
+
+font-size: 18px;
+color: #ededed;
+text-decoration: none;
+font-weight: 500;
+margin-left: 35px;
+transition: 0.2s;
+}
+.navbar a:hover,
+.navbar a.active{
+    color: #00abf0;
+}
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay:0.4s;
+}
+
+.projects-section {
+    padding: 20px;
+    background-color: #081b29;
+    min-height: 100vh;
+    padding-top: 70px;
+    text-align: center;
+}
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 8%;
+}
+.container{
+    opacity: 1;
+    animation: fade 3s linear;
+}
+
+.container h2{
+    text-align: center;
+}
+
+.projects-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #081b29;
+    border-radius: 8px;
+}
+
+.project img {
+    width: 150px;
+    height: 100px;
+    margin-right: 25px;
+    border-radius: 8px;
+}
+
+.project-details {
+    max-width: 600px;
+}
+
+.project-details h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #00abf0;
+}
+
+.project-details p {
+    margin: 5px 0 0;
+    color: #ededed;
+}
+span{
+    color: #00abf0;
+}
+@keyframes showRight{
+    100%{
+        width: 0;
+    }
+}
+@keyframes fade {
+    100% {
+        opacity: 1;
+    }
+    0% {
+        opacity: 0;
+    }
+}
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #081b29;
+    color: #ededed;
+}
+.footer ::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay:0.4s;
+}
+.footer span{
+    color:#00abf0;
+} 
+
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Prateek.</a>
+        <nav class="navbar">
+            <a href="portfolioindex.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Skills.html">Skills</a>
+            <a href="Projects.html" class="active">Projects</a>
+            <a href="Contact.html" >Contact</a>
+        </nav>
+    </header>
+    <section class="project-section">
+        <div class="container">
+        <div class="project">
+            <img src="ss.png" alt="Project 1 Image">
+            <div class="project-details">
+                <h3>PassGenX</h3>
+                <p>It is random password generator which can be used to generate strong and unique passwords. We can copy the password as well in the clipboard as well. <div><span><b>Tech Stack used:</b></span><div> HTML,CSS,JavaScript</div></div> </p>
+            </div>
+        </div>
+        <div class="project">
+            <img src="ss2.png" alt="Project 2 Image">
+            <div class="project-details">
+                <h3>PyQuiz Mastermind</h3>
+                <p>It is a mini quiz game which can be used to guess the abbreviation of famous short form words. one right answer will provide you 1 point and after giving all the answers you get your final result. <div><span><b>Tech Stack used:</b></span><div>Python</div></p>
+            </div>
+        </div>
+    </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <p><span>Copyright@2024</span>|Prateek Tiwari| All right reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

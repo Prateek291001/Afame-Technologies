@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+    background: #081b29;
+    color: #ededed;
+
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+.logo {
+    position: relative;
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+.logo::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay:0.4s;
+}
+
+.navbar a {
+
+font-size: 18px;
+color: #ededed;
+text-decoration: none;
+font-weight: 500;
+margin-left: 35px;
+transition: 0.2s;
+}
+.navbar a:hover,
+.navbar a.active{
+    color: #00abf0;
+}
+.image img {
+    margin: 140px 100px 80px 100px;
+    float: right;
+}
+.image::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay:1s;
+}
+.home{
+    height: 50vh; 
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home-content{
+    max-width: 600px;
+}
+.home-content h1{
+    position: relative;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-top: 350px;
+}
+.home-content p{
+    position: relative;
+    font-size: 16px;
+    margin: 40px 0 40px;
+}
+.home-content h1::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay:1s;
+}
+.home-content p::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay:1.6s;
+}
+.navbar ::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay:0.4s;
+}
+
+@keyframes showRight{
+    100%{
+        width: 0;
+    }
+}
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #081b29;
+    color: #ededed;
+}
+.footer ::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay:0.4s;
+}
+.footer span{
+    color:#00abf0;
+} 
+
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Prateek.</a>
+        <nav class="navbar">
+            <a href="portfolioindex.html">Home</a>
+            <a href="About.html" class="active">About</a>
+            <a href="Skills.html">Skills</a>
+            <a href="Projects.html">Projects</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+    </header>
+    <div class="image">
+        <img src="home2.jpg" alt="" width="300px" height="350px">
+    </div>
+    <section class="home">
+    <div class="home-content">
+        <h1> About Myself</h1>
+        <p> Hello, Myself Prateek Tiwari, I am from Delhi. I have done my Master's in Computer Applications from Dr APJ Abdul Kalam Technical University. I am very much eager and passionate to learn about new things and technologies. I have decent knowledge of tech stacks like HTML5, CSS, JavaScript, Python, SQL, etc. In, additon I have some knowledge of framework like React.js and node.js. During my academic session i have made some projects like 'PassGenX' and 'PyQuiz' with the use of Tech stacks mentioned earlier. I would be grateful to have new opportunities and want to learn more and gain industry level experience.</p>
+    </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <p><span>Copyright@2024</span>|Prateek Tiwari| All right reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
